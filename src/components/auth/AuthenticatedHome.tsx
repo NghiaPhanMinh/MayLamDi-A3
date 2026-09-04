@@ -130,7 +130,7 @@ export function AuthenticatedHome() {
     return (
       <main className="authenticated-shell profile-gate-shell">
         <header className="app-header">
-          <Link className="nav-brand" to="/" aria-label="MayLamDi home"><BrandLogo compact /><span>MayLamDi</span></Link>
+          <Link className="nav-brand" to="/" aria-label="MayLamDi home"><BrandLogo compact /><span>MayLamDi</span><span className="a3-badge" style={{ fontSize: "0.68rem", fontWeight: 900, padding: "1.5px 7px", borderRadius: "999px", background: "#facc15", color: "#101517", border: "1.5px solid #101517", boxShadow: "1px 1px 0 #101517", marginLeft: "6px" }}>A3</span></Link>
           <div className="nav-actions"><SubscriptionNavItem plan={currentPlan} /><ThemeToggle /><button className="secondary-button" type="button" onClick={() => void signOut()}>Sign out</button></div>
         </header>
         <div className="profile-gate-content"><ProfileCenter setupRequired /></div>
@@ -176,6 +176,7 @@ export function AuthenticatedHome() {
         <Link className="nav-brand" to="/" aria-label="MayLamDi home">
           <BrandLogo compact />
           <span>MayLamDi</span>
+          <span className="a3-badge" style={{ fontSize: "0.68rem", fontWeight: 900, padding: "1.5px 7px", borderRadius: "999px", background: "#facc15", color: "#101517", border: "1.5px solid #101517", boxShadow: "1px 1px 0 #101517", marginLeft: "6px" }}>A3</span>
         </Link>
         <div className="nav-actions">
           {activeRoomId ? <ActivityCenter teamId={activeRoomId} /> : null}

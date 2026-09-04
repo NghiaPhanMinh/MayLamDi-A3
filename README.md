@@ -1,16 +1,17 @@
-﻿# MayLamDi
+# MayLamDi (A3 Submission)
 
-> An AI-assisted teamwork platform designed to make university group projects feel fairer, clearer, and more collaborative.
+> An AI-assisted teamwork platform designed to make university group projects feel fairer, clearer, and more collaborative — Assignment 3 Prototype Submission.
 
-[![Build Status](https://img.shields.io/badge/Build-Passing-22c55e.svg)](https://github.com/NghiaPhanMinh/Gamified-Team-Project-Tracker)
-[![Tests](https://img.shields.io/badge/Tests-165%2F165%20Passed-22c55e.svg)](https://github.com/NghiaPhanMinh/Gamified-Team-Project-Tracker)
+[![Build Status](https://img.shields.io/badge/Build-Passing-22c55e.svg)](https://github.com/NghiaPhanMinh/MayLamDi-A3)
+[![Tests](https://img.shields.io/badge/Tests-165%2F165%20Passed-22c55e.svg)](https://github.com/NghiaPhanMinh/MayLamDi-A3)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Deployment](https://img.shields.io/badge/Live-may--lam--di--a3.vercel.app-blue.svg)](https://may-lam-di-a3.vercel.app)
 
 ---
 
 ## 1. Project Overview
 
-**MayLamDi** — an AI-assisted teamwork platform designed to make university group projects feel fairer, clearer, and more collaborative.
+**MayLamDi (A3 Submission)** — an AI-assisted teamwork platform designed to make university group projects feel fairer, clearer, and more collaborative.
 
 Teams can organise project briefs, plan tasks, allocate responsibilities based on skills and workload, and keep everyone's progress visible in one shared space. By combining AI planning, contribution tracking, and gamification, MayLamDi reduces uneven workload and keeps teams accountable — without turning collaboration into competition.
 
@@ -59,8 +60,8 @@ Teams can organise project briefs, plan tasks, allocate responsibilities based o
 
 ### Step 1: Clone the Repository
 ```bash
-git clone https://github.com/NghiaPhanMinh/Gamified-Team-Project-Tracker.git
-cd Gamified-Team-Project-Tracker
+git clone https://github.com/NghiaPhanMinh/MayLamDi-A3.git
+cd MayLamDi-A3
 ```
 
 ### Step 2: Install Dependencies
@@ -128,7 +129,7 @@ All required environment variables are listed in [`.env.example`](.env.example).
 
 ## 6. Deployment Notes
 
-- **Frontend Hosting**: Hosted on [Vercel](https://vercel.com/) linked to the `main` branch.
+- **Frontend Hosting**: Hosted on [Vercel](https://may-lam-di-a3.vercel.app/) linked to the `main` branch.
 - **Backend Hosting**: Hosted on [Convex Cloud](https://www.convex.dev/) (production deployment).
 - **Automated CI/CD**:
   - Pushes to `main` trigger GitHub Actions and Vercel builds.
@@ -136,7 +137,7 @@ All required environment variables are listed in [`.env.example`](.env.example).
 - **OAuth Callback Whitelisting**:
   - Google OAuth requires exact redirect URIs configured in Google Cloud Console:
     - **Local**: Origin `http://localhost:5173` and redirect `https://<dev>.convex.site/api/auth/callback/google`
-    - **Production**: Origin `https://maylamdi.vercel.app` and redirect `https://<prod>.convex.site/api/auth/callback/google`
+    - **Production**: Origin `https://may-lam-di-a3.vercel.app` and redirect `https://<prod>.convex.site/api/auth/callback/google`
 - **Typography & Font Fallbacks**:
   - The design specifies *Blode Starkly* for headings and *Glacial Indifference* for body text. Documented system font fallbacks ensure the UI looks sharp and functional on all operating systems without hotlinking external font CDNs.
 

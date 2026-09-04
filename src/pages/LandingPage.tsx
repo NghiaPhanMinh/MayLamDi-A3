@@ -1458,6 +1458,7 @@ export function LandingPage({ currentPlan, isAuthenticated = false }: LandingPag
         <Link className="nav-brand" to="/" aria-label="MayLamDi landing page">
           <BrandLogo compact />
           <span>MayLamDi</span>
+          <span className="a3-badge" style={{ fontSize: "0.68rem", fontWeight: 900, padding: "1.5px 7px", borderRadius: "999px", background: "#facc15", color: "#101517", border: "1.5px solid #101517", boxShadow: "1px 1px 0 #101517", marginLeft: "6px" }}>A3</span>
         </Link>
         <div className="marketing-header-actions">
           <ThemeToggle />
@@ -1467,7 +1468,7 @@ export function LandingPage({ currentPlan, isAuthenticated = false }: LandingPag
       <div className="marketing-about-transition-scene">
       <section className="marketing-hero" aria-labelledby="marketing-title">
         <div>
-          <p className="kicker">Teamwork tracking &amp; task allocation</p>
+          <p className="kicker">A3 Submission Prototype · Teamwork tracking &amp; task allocation</p>
           <h1 id="marketing-title" className="marketing-title">
             <button
               className="marketing-title-trigger"
